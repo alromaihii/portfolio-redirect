@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <title>Redirecting...</title>
   <script>
-    // Immediately redirect to Cloud Run app
-    window.location.replace("https://faisal-alromaihi-personal-portfolio-991538222459.us-west1.run.app");
+    // Immediately redirect on page load
+    document.addEventListener("DOMContentLoaded", function() {
+      window.location.replace("https://faisal-alromaihi-personal-portfolio-991538222459.us-west1.run.app");
+    });
   </script>
+  <style>
+    /* hide all content just in case */
+    html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+  </style>
 </head>
 <body>
-  <!-- Optional: invisible fallback for users with JS disabled -->
-  <noscript>
-    <p>Please enable JavaScript to be redirected automatically, or click <a href="https://faisal-alromaihi-personal-portfolio-991538222459.us-west1.run.app">here</a>.</p>
-  </noscript>
 </body>
 </html>
